@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    background-color: rgb(33, 26, 44);
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+
+}
+.con{color:aqua;
+    position: absolute;
+    left: 270px;
+    top: 260px;
+    font-size: 50px;
+}
+.menu {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 50px;
+
+}
+.menu:hover {
+    color: aqua;
+    transform: scale(1.1);
+    text-decoration: underline;
+     
+}
+.navbar {
+    position: absolute;
+    right: 130px;
+
+
+}
+.port {
+    color:aqua;
+    position: absolute;
+    left: 50px;
+    top: 2px;
+    font-size: 40px;
+}
+
+.profile {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 300px;
+    background-color: aqua;
+    border-radius: 100%;
+    transition: all 0.3 ease;
+    top: 200px;
+    box-shadow: -4px -4px 8px aqua;
+    filter: drop-shadow(1px 1px 15px aqua);
+    
+
+}
+.profile:hover {
+    transform: scale(1.1);
+}
+.site {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50px;
+    top: 650px;
+    transition: 0.3px;
+    
+}
+.sites {
+    width: 50px;
+    border-radius: 100%;
+    margin: 10px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid aqua;
+    border-width: 6px;
+    background-color: aqua;
+    left: 50px;
+    position: relative;
+    
+    
+}
+.sites:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(10px 10px 20px aqua);
+    border: 1px solid aqua;
+    border-width: 6px;
+    
+    
+}
+.name {
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    top: 100px;
+    left: 50px;
+}
+.sen {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 350px;
+    left: 50px;
+
+    
+}
+.con1{
+    color: white;
+    position: absolute;
+    top: 240px;
+    left: 50px;
+    font-size: 40px;
+}
+.img1 {
+            border-radius: 100%;
+            height: 200px;
+            width: 200px;
+            border: 1px solid aqua;
+            box-shadow: -4px -4px 8px aqua;
+             filter: drop-shadow(1px 1px 15px aqua);
+             position: absolute;
+             top: 100px;
+             left: 100px;
+        }
+        .img1:hover {
+            transform: scale( 1.2 );
+        }
+        .ab {
+            position: absolute;
+            left: 410px;
+            color: aqua;
+        }
+        .ab2 {
+            color: white;
+            position: absolute;
+            bottom: 370px;
+            left: 380px;
+        }
+        .ms1{
+            position: absolute;
+            left: 350px;
+             font-size: 15px;
+             color: white;
+             top: 100px;
+        }

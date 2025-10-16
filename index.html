@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typewriter Effect</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+
+</head>
+
+
+<body>
+    <section ata-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
+        <div class="navbar">
+        <a href="index.html"class="menu">Home</a>
+        <a href="about.html" class="menu">About</a>
+        <a href="service.html" class="menu">Skills</a>
+        <a href="contact.html" class="menu">Contact</a>
+    </div>
+     
+
+
+        <h3 class="port">Portfolio</h3>
+
+    <h1 class="name">Hello it's me  <br>JHERIC GARDOSE</h1>
+    <h2 class="con1"> And i'm a</h2>
+    </section>
+    
+      <h3><span id="words" class="con"></span></h3>
+        
+        <!-- Typewriter Script -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const words = ["Beginner", "Frontend Developer", "Programmer", "Motion Editor"];
+                const textElement = document.getElementById("words");
+                let wordIndex = 0;
+                let charIndex = 0;
+                const typingSpeed = 100;
+                const deletingSpeed = 50;
+                const pauseBetweenWords = 1500;
+
+                function type() {
+                    if (wordIndex < words.length) {
+                        const currentWord = words[wordIndex];
+                        if (charIndex < currentWord.length) {
+                            textElement.textContent += currentWord.charAt(charIndex);
+                            charIndex++;
+                            setTimeout(type, typingSpeed);
+                        } else {
+                            setTimeout(deleteWord, pauseBetweenWords);
+                        }
+                    } else {
+                        wordIndex = 0;  // Reset to first word
+                        charIndex = 0;
+                        setTimeout(type, pauseBetweenWords);
+                    }
+                }
+
+                function deleteWord() {
+                    if (textElement.textContent.length > 0) {
+                        textElement.textContent = textElement.textContent.slice(0, -1);
+                        setTimeout(deleteWord, deletingSpeed);
+                    } else {
+                        wordIndex++;
+                        charIndex = 0;
+                        if (wordIndex >= words.length) {
+                            wordIndex = 0;  // Loop back
+                        }
+                        setTimeout(type, typingSpeed);
+                    }
+                }
+
+                type();  // Start the typewriter
+            });
+    </script>
+   
+
+
+
+        <p class="sen"> As a man, i had a big dreams, I wanted to explore the world, meet new <br> 
+    people, and learn new things. School was my first big challenges.<br> I had to work hard 
+and stay focused. Growing up, I faced many obstacles.<br> There were times when i
+felt lost and unsure. But challenges thought <br> me something value. I learned to be strong 
+and keep moving forward.<br> One of the most lesson  learned is to appreciate the small <br>
+moments and things that was given to me. As i continue my journy <br>i know that there 
+will be more challenges and im ready for that.</p>
+    
+    <img src="1000002715.jpg" class="profile">
+
+    <div class="site">
+      <a href="https://www.facebook.com/jheric.gardose.94">  <img src="facebook-app-symbol.png" class="sites"> </a>
+       <a href=""> <img src="twitter-logo-wihout-background-11661724040wl0mzokfqt-removebg-preview.png" class="sites"></a>
+       <a href="">  <img src="youtube.png" class="sites"></a>
+        <a href="https://www.tiktok.com/@official_jheric?_t=ZS-90XnZ7sW7HD&_r=1"> <img src="tik-tok.png" class="sites"></a>
+        
+    </div>
+</section>
+  
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
+

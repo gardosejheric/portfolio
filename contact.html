@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Contact Form</title>
+    <style>
+        * {
+            color: white;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 700px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+             border: 1px solid white;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            border: 1px solid white;
+        }
+        .con {
+            color: aqua;
+            position: absolute;
+            top: 10px;
+            left: 790px;
+            font-size: 70px;
+        }
+    </style>
+</head>
+<body>
+      <div class="navbar">
+        <a href="index.html" class="menu">Home</a>
+        <a href="about.html" class="menu">About</a>
+        <a href="service.html" class="menu">Skills</a>
+        <a href="contact.html" class="menu">Contact</a>
+    </div>
+    <h1 class="con">Contact</h1><br><br><br><br><br>
+    <form action="#" method="post" class="input"><br><br><br><br>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required >
+        
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" name="number" placeholder="Enter your phone number" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        
+        <label for="place">Place (e.g., Address or Location):</label>
+        <input type="text" id="place" name="place" placeholder="Enter your place" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+        
+        <input type="submit" value="Send Message">
+    </form>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+</body>
+</html>
